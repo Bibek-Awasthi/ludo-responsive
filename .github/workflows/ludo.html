@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo World - best ludo game</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+width: 100vw;
+height: 100vh;
+background: -webkit-linear-gradient(55deg,rgb(37, 205, 235),rgba(237, 215, 16, 0.7));
+padding: 56px 60px;
+        }
+        .ludo-container{
+width: 45%;
+border: 2px solid green;
+margin: auto;
+padding: 12px 28px;
+border-radius: 10px;
+        }
+        .ludo-container h2{
+            text-align: center;
+            font-size: 2.3rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: #ffff;
+            text-shadow: -2px -3px 2px grey,3px 2px 3px #0000;
+        }
+        .box{
+            width: 20%;
+            display: inline-block;
+            margin: 8px 30px;
+        }
+        .box p{
+margin: 6px;
+font-size: 23px;
+        }
+        .boxes{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        flex-wrap: wrap;
+        }
+        .box img{
+            width: 104px;
+        }
+        .btndiv{
+            width: 35%;
+            margin: 12px auto;
+        }
+        .btndiv #playBtn{
+            width: 80%;
+            padding: 3px 6px;
+            font-size: 27px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all ease-in-out 0.6s;
+        }
+     .btndiv #playBtn:hover{
+        background: lightgreen;
+        color: #fca50e;
+        border: 2px solid green;
+     }
+     @media(max-width: 450px){
+        .container{
+            padding: 20px 14px;
+        }
+        .ludo-container{
+width: 100%;
+border: 2px solid green;
+margin: auto;
+padding: 1px 2px;
+border-radius: 10px;
+box-shadow: -3px 2px 3px grey,3px 2px blue;
+        }
+        .ludo-container h2{
+            text-align: center;
+            font-size: 2.3rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: #ffff;
+            text-shadow: -2px -3px 2px grey,3px 2px 3px #0000;
+        }
+        .box{
+            width: 30%;
+            display: inline-block;
+            margin: 8px 30px;
+        }
+        .box p{
+margin: 6px;
+font-size: 23px;
+        }
+        .boxes{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        flex-wrap: wrap;
+        }
+        .box img{
+            width: 104px;
+        }
+        .btndiv{
+            width: 35%;
+            margin: 12px auto;
+        }
+        .btndiv #playBtn{
+            width: 80%;
+            padding: 3px 6px;
+            font-size: 27px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all ease-in-out 0.6s;
+        }
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ludo-container">
+            <h2>Ludo World</h2>
+            <div class="boxes">
+            <div class="box">
+                <p id="human">Player-1</p>
+                <img id="i1" src="./img/dice1.png" alt="human">
+            </div>
+            
+            <div class="box">
+             <p id="res">Click play button</p>
+            </div>
+            <div class="box">
+                <p id="comp">vs Computer💻</p>
+                <img id="i2" src="./img/dice2.png" alt="computer">
+            </div>
+        </div>
+            <div class="btndiv">
+            <button id="playBtn">Play 🎲</button>
+        </div>
+        </div>
+    </div>
+<script src="ludo.js"></script>
+</body>
+</html>
